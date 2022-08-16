@@ -1,0 +1,49 @@
+package String;
+
+/* 
+-----------------------------------
+ String , StringBuilder , ArrayList
+-----------------------------------
+*/
+import java.util.*;
+public class String1{
+    public static void main(String args[]){
+
+        Scanner scn = new Scanner(System.in);
+
+        // Declaration
+        String str = "hello";
+        String str1 = new String("hello");
+
+        // input string
+        String str2 = scn.next();      // if space is not given
+        String str3 = scn.nextLine();  // if space is given
+
+        // string length
+        System.out.println(str.length()); // length is a method not variable
+
+        // Access the character
+        char ch = str.charAt(0);
+        char chi = str.charAt(str.length()-1);
+
+        // Can not set array
+
+        // print string
+        for(int i=0; i<str.length(); i++){
+            char ch2 = str.charAt(i);
+            System.out.println(ch2);
+        }
+
+        // substring
+        // Starting index to end index not including last index
+        String sub = str.substring(0,5);
+
+        // 
+
+
+
+
+
+
+    }
+}
